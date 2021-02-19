@@ -8,6 +8,15 @@
 
 html {
     font-size: 16px;
+    color: #1D5962;
+}
+
+h1, h2, h3 {
+    Font-Family: 'Roboto', Sans-Serif;
+}
+
+p, a {
+    Font-Family: 'Lora', Serif;
 }
 
 .container {
@@ -30,6 +39,11 @@ p {
 a {
     text-decoration: none;
     font-weight: bold;
+    color: inherit;
+}
+
+a:hover {
+    color: #1F226B;
 }
 
 .mobile {
@@ -47,7 +61,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: rgba(253, 241, 231, 0.95);
 }
 
 .icon-navbar {
@@ -55,7 +69,19 @@ header {
 
 }
 
-header.logo, header h1 {
+header .logo {
+    position: absolute;
+    top: 0%;
+    height: 2rem;
+    margin-top: 1.1rem;
+}
+
+header h1 {
+    position: relative;
+    left: 2rem;
+}
+
+header .logo, header h1 {
     display: inline-block;
 } 
 
@@ -77,12 +103,14 @@ main {
 .intro {
     display: flex;
     align-items: center;
-    background-color: gray;
+    color: #FDF1E7;
+    background-color: #1D5962;
 }
 
 .learn{
     display: block;
     padding-right: 5rem;
+    background-color: #1D5962;
 }
 
 .learn h2 {
@@ -104,10 +132,17 @@ main {
     display: block;
     padding: 0.5rem;
     text-align: center;
-    background-color: rgb(12, 62, 82);
-    color: rgb(255, 255, 255);
+    background-color: #FDF1E7;
+    color: #1D5962;
     text-decoration: none;
     font-size: 1.5rem;
+    transition: color 2s; background-color 2s;
+    border-radius: .5rem;
+}
+
+.button:hover {
+    color: #FDF1E7;
+    background-color: #20445F;
 }
 
 /* Info */
@@ -115,6 +150,7 @@ main {
 .info {
     display: flex;
     flex-wrap: wrap;
+    background-color: #FDF1E7;
 }
 
 .left {
@@ -149,8 +185,13 @@ main {
 .box {
     display: flex;
     align-items: center;
-    border: solid rgba(187, 223, 223, 0.4) 1px;
+    border: solid #1D5962 1px;
     padding: 1rem;
+}
+
+.box:hover {
+    color: #FDF1E7;
+    background-color: #1D5962;
 }
 
 .box img {
@@ -177,6 +218,11 @@ main {
 
 /* Academics */
 
+.academics {
+    background-color: #1D5962;
+    color: #FDF1E7;
+}
+
 .academics h2 {
     text-align: center;
     padding-bottom: 1rem;
@@ -199,12 +245,12 @@ main {
     margin: 1rem;
     padding-bottom: 1.5rem;
     width: 30%;
-    min-height: 20rem;
+    color: #1D5962;
+    background-color: #FDF1E7;
 }
 
 .major img {
     max-width: 100%;
-    height: 100%;
     display: block;
 }
 
@@ -222,6 +268,10 @@ main {
 }
 
 /* Thesis */
+
+.thesis {
+    background-color: #FDF1E7;
+}
 
 .thesis h2 {
     text-align: center;
@@ -251,6 +301,7 @@ footer {
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: space-between;
+    background-color: #FDF1E7;
 }
 
 footer nav {
@@ -271,6 +322,11 @@ footer nav {
 
     .container {
         padding: 2rem 1rem;
+    }
+
+    header .logo {
+        position: static;
+        margin-top: 0rem;
     }
 
     .icon-navbar {
@@ -320,6 +376,11 @@ footer nav {
         border: none;
         padding: 0;
     }
+
+    .box:hover {
+        color: #1D5962;
+        background-color: #FDF1E7;
+    }
     
     .box img {
         width: 100%;
@@ -356,7 +417,9 @@ footer nav {
         min-height: auto;
         margin: 0 0 0.5rem 0;
         padding-bottom: 0.5rem;
-        background-color: rgb(187, 223, 223);
+        color: #FDF1E7;
+        background-color: #20445F;
+        border-radius: .5rem;
     }
 
     .marketing {
@@ -364,7 +427,8 @@ footer nav {
     }
 
     .academics {
-        background-color: rgba(255, 255, 255, 0.8);
+        color: #FDF1E7;
+        background-color: #1D5962;
     }
 
     /* Thesis */
@@ -391,27 +455,50 @@ footer nav {
 
 }
 
-@media only screen and (min-width: 1265px) and (max-width: 1382px) {
-    .data {
-        padding-bottom: 42.5px;
+@media screen and (min-width: 600px) {
+    .major {
+      height: 20rem;
     }
 }
 
-
-@media only screen and (min-width: 1270px) and (max-width: 1382px) {
-    .marketing {
-        padding-bottom: 42.5px;
+@media screen and (min-width: 898px) {
+    .major {
+      height: 21rem;
     }
 }
 
-@media only screen and (min-width: 1340px) and (max-width: 1399px) {
-    .software {
-        padding-bottom: 42.5px;
+@media screen and (min-width: 1136px) {
+    .major {
+      height: 22rem;
     }
 }
 
-@media only screen and (min-width: 1400px) {
-      .computer {
-          padding-bottom: 5.5px;
-      }
+@media screen and (min-width: 1374px) {
+    .major {
+      height: 23rem;
+    }
+}
+
+@media screen and (min-width: 1478px) {
+    .major {
+      height: 24rem;
+    }
+}
+
+@media screen and (min-width: 1583px) {
+    .major {
+      height: 25rem;
+    }
+}
+
+@media screen and (min-width: 1687px) {
+    .major {
+      height: 26rem;
+    }
+}
+
+@media screen and (min-width: 1791px) {
+    .major {
+      height: 27rem;
+    }
 }

@@ -82,7 +82,6 @@ main {
 
 .learn{
     display: block;
-    padding-left: 1.5rem;
     padding-right: 5rem;
 }
 
@@ -94,14 +93,11 @@ main {
     padding-bottom: 1.5rem;
 }
 
-.intro figure {
-    overflow: hidden;
-}
-
 .intro img {
     width: 60%;
     height: auto;
     display: block;
+    padding-right: 1.5rem;
 }
 
 .button {
@@ -115,6 +111,66 @@ main {
 }
 
 /* Info */
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    width: 60%;
+    overflow: hidden;
+    padding-right: 1.5rem;
+}
+
+.left img, .left video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.left h2 {
+    padding-bottom: 1.5rem;
+}
+
+.left .quote {
+    font-style: italic;
+    padding-bottom: 2rem;
+}
+
+.right {
+    width: 40%;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    border: solid rgba(187, 223, 223, 0.4) 1px;
+    padding: 1rem;
+}
+
+.box img {
+    width: 35%;
+    overflow: hidden;
+    height: auto;
+}
+
+.box .desktop {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.box .text {
+    width: 65%;
+    padding: 1rem;
+}
+
+.box .text * {
+    margin-bottom: 0.5rem;
+}
+
 
 /* Academics */
 

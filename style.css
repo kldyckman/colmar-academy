@@ -220,6 +220,7 @@ footer nav {
 
     .intro img {
         width: 100%;
+        padding-right: 0rem;
     }
 
     .learn {
@@ -227,6 +228,49 @@ footer nav {
         flex-direction: column;
         padding: 1.5rem;
     }
+
+    .info {
+        padding-top: 0;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .box .desktop {
+        display: none;
+    }
+    
+    .info .right {
+        width: 100%;
+    }
+
+    .box {
+        display: block;
+        border: none;
+        padding: 0;
+    }
+    
+    .box img {
+        width: 100%;
+        padding: 1rem 0 1rem 0;
+        margin: auto;
+    }
+    
+    .box .mobile {
+        max-width: 100%;
+        display: initial;
+    }
+
+    .box .text {
+        padding: 1rem 1rem 3rem 1rem;
+        width: 100%;
+    }
+
+    .box .lecture {
+        padding-bottom: 0;
+    }
+
 
     footer p {
         margin: auto;

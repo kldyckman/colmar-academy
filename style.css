@@ -199,15 +199,9 @@ main {
     min-height: 20rem;
 }
 
-.major figure {
-    max-width: 33.25rem;
-    height: 100%;
-    overflow: hidden;
-}
-
 .major img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 }
 
@@ -359,4 +353,29 @@ footer nav {
         margin: auto;
     }
 
-  }
+}
+
+@media only screen and (min-width: 1265px) and (max-width: 1382px) {
+    .data {
+        padding-bottom: 42.5px;
+    }
+}
+
+
+@media only screen and (min-width: 1270px) and (max-width: 1382px) {
+    .marketing {
+        padding-bottom: 42.5px;
+    }
+}
+
+@media only screen and (min-width: 1340px) and (max-width: 1399px) {
+    .software {
+        padding-bottom: 42.5px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+      .computer {
+          padding-bottom: 5.5px;
+      }
+}

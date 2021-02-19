@@ -174,6 +174,56 @@ main {
 
 /* Academics */
 
+.academics h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.majors-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.major {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding-bottom: 1.5rem;
+    width: 30%;
+    min-height: 20rem;
+}
+
+.major figure {
+    max-width: 33.25rem;
+    height: 100%;
+    overflow: hidden;
+}
+
+.major img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.major h3 {
+    padding: 1rem;
+}
+
+.courses {
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+.classes {
+    padding: 0 1rem;
+}
+
 /* Thesis */
 
 /* Footer */
@@ -213,6 +263,8 @@ footer nav {
         width: 100%;
     }
 
+    /* Intro Media Query */
+
     .intro {
         padding: 0;
         display: contents;
@@ -228,6 +280,8 @@ footer nav {
         flex-direction: column;
         padding: 1.5rem;
     }
+
+    /* Info Media Query */
 
     .info {
         padding-top: 0;
@@ -271,6 +325,35 @@ footer nav {
         padding-bottom: 0;
     }
 
+    /* Academics Media Query */
+
+    .majors-container {
+        display: contents;
+    }
+
+    .majors-container img {
+        display: none;
+    }
+
+    .major {
+        width: 100%;
+        min-height: auto;
+        margin: 0 0 0.5rem 0;
+        padding-bottom: 0.5rem;
+        background-color: rgb(187, 223, 223);
+    }
+
+    .marketing {
+        margin: 0;
+    }
+
+    .academics {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+
+
+    /* Footer Media Query */
 
     footer p {
         margin: auto;
